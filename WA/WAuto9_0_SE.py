@@ -117,7 +117,7 @@ def sendMessage(inputList, messageList, browser, sentBase, phoneFile):
             delAndBackUp(phoneFile, inputList)
     driver.quit()
 
-def fullProgram( browser='FF', messageFile='message.txt', sourceFile='Phones.txt', sentBase='sent.txt'):  # browser = 'FF' / 'Ch' / 'Edge'
+def fullProgram( browser='Ch', messageFile='message.txt', sourceFile='Phones.txt', sentBase='sent.txt'):  # browser = 'FF' / 'Ch' / 'Edge'
     inputList = importAndSortPhoneNums(sourceFile, sentBase)
     message = getMessage(messageFile)
     sendMessage(inputList, message, browser, sentBase, sourceFile)
